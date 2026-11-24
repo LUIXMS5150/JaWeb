@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPWEB-Herramientas</title>
+    <link href="..\CSS\Styles.css" rel="stylesheet">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav class="nav-encabezado">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">Jap<span>Web</span></a>
+                <button class="menu-btn" id="menubtn">☰</button>
+                <ul class="nav-links" id="navlinks">
+                    <li><a href="..\ENLACES/aprende.html">Aprende</a></li>
+                    <li><a href="..\ENLACES/cultura.html">Cultura</a></li>
+                    <li><a href="..\ENLACES/historia.html">Historia</a></li>
+                    <li><a href="..\ENLACES/herramientas.html">Herramientas</a></li>
+                    <li><a href="..\ENLACES/viaja.php">Viaja con Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--presentacion de la paguina-->
+    <section class="presentacion_herramientas">
+        <img src="..\IMG\logo gato.png" class="logopre">
+        <h1>Herramientas</h1>
+        <p>En esta paguina encontradas herramientas utiles y practicas para tu viaje a Japon</p>
+    </section>
+    <!--Enlaces a otras paguinas-->
+    <section class="herramientas">
+        <h1>Herramientas</h1>
+        <div class="grid-herramientas">
+            <div class="herramientas-card">
+                <div class="herramienta-img">
+                    <div class="calcu">
+                        <!--Esta parte se encarga de pedir los numeros al usuario (mediante el uso del input)-->
+                            <div class="input_box">
+                                <input type="number" placeholder="Ingrese un Numero" 
+                                id="num1">
+                            </div>
+                            <div class="input_box">
+                                <input type="number" placeholder="Ingrese un Numero" id="num2">
+                            </div>
+                            <!--se realiza la entrega de las operaciones disponibles esto en una lista para eleccion del usuario-->
+                            <h3>Operaciones disponibles:</h3>
+                                <div class="select_box">
+                                    <select id="operaciones">
+                                        <option value="suma">Suma</option>
+                                        <option value="resta">Resta</option>
+                                        <option value="multiplicacion">Multiplicacion</option>
+                                        <option value="division">Division</option>
+                                    </select>
+                                </div>
+                            <!--Si el usuario da clik en el boton se realiza la suma correspondiente -->
+                            <div class="boton_cal">
+                            <button onclick="calcular()">Calcular</button>
+                            <h3> El resultado es: </h3>
+                            <div class="resultado" id="resultado"></div>
+                            </div>
+                        </div>
+                </div>
+                <h3>Calculadora</h3>
+            </div>
+
+            <div class="herramientas-card">
+                <div class="herramienta-img">
+                    <div class="conver">
+                        <div class="input_box">
+                            <input type="number" placeholder="Ingrese Un Numero" id="valor">
+                        </div>
+                        <h3>Seleccione la Moneda</h3>
+                        <div class="select_box">
+                            <select id="opeconver">
+                            <option value="cop">COP</option>
+                            <option value="yen">JPY</option>
+                        </select>
+                        </div>
+                        <div class="boton_cal">
+                            <button onclick="convertir()" >Convertir</button>
+                            <h3>El resultado es: </h3>
+                            <div id="convertido" class="resultado"></div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Convertidor de Monedas YEN/COPS</h3>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Pie de paguina-->
+    <footer>
+        <nav class="nav-pie-paguina">
+            <div class="pie-container">
+                <ul class="nav-links-pie" id="navlinks-pie">
+                    <li><a href="..\ENLACES/aprende.html">Aprende</a></li>
+                    <li><a href="..\ENLACES/cultura.html">Cultura</a></li>
+                    <li><a href="..\ENLACES/historia.html">Historia</a></li>
+                    <li><a href="..\ENLACES/herramientas.html">Herramientas</a></li>
+                    <li><a href="..\ENLACES/viaja.php">Viaja con Nosotros</a></li>
+                </ul>
+                <p class="mensaje">Vive la mejor experiencia con nuestros guias expertos en la cultura japones,
+                    o con nuestros guias nativos de japon, apasionados por las experiencias y la cultura extranjera. Tu mejor guia, 
+                    para un viaje inolvidable
+                </p>
+                <h2 class="logo-pie">Jap<span>Web</span></h2>
+                <br>
+                <h3 class="firma">© Luis Munevar Solano--Programador Junior</h3>
+            </div>
+        </nav>
+    </footer>
+    <script src="..\JS\script_pag_herramientas.js"></script>
+</body>
+</html>
